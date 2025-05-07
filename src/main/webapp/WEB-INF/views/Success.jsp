@@ -15,14 +15,6 @@
         .form-label {
             font-weight: bold;
         }
-        /* .form-card {
-                max-width: 800px;
-                margin: auto;
-                padding: 30px;
-                border: 2px solid #007bff;
-                border-radius: 15px;
-                box-shadow: 0 0 10px rgba(0,0,0,0.15);
-                background-color: #f8f9fa; */
            
     </style>
 </head>

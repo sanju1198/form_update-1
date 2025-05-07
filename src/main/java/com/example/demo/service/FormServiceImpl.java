@@ -15,9 +15,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class FormServiceImpl implements FormService {
 
-    @Autowired
-    private FormRepo formRepository;
 
+    private final FormRepo formRepository;
+	@Autowired
+	public FormServiceImpl(FormRepo formRepository) {
+		this.formRepository = formRepository;
+	}
 
 
 
@@ -59,4 +62,19 @@ public class FormServiceImpl implements FormService {
 		return formRepository.save(formEntity);
         
     }
+	@Override
+	public List<FormEntity> getAllForms() {
+		return formRepository.findAll();
+	}
+
+	@Override
+	public FormEntity getFormById(Long id) {
+		return formRepository.findById(id).orElse(null); // or throw a custom exception
+	}
+
+	@Override
+	public void deleteForm(Long id) {
+		formRepository.deleteById(id);
+	}
+
 }
