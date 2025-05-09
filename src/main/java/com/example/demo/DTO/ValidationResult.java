@@ -2,11 +2,10 @@ package com.example.demo.DTO;
 
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class ValidationResult {
-    private Map<String, String> fieldErrors = new HashMap<>();
+    private final Map<String, String> fieldErrors = new HashMap<>();
 
     public ValidationResult() {}
 

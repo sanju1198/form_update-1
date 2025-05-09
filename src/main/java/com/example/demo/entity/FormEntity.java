@@ -1,5 +1,8 @@
 package com.example.demo.entity;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+
 import javax.persistence.*;
 
 @Table(name = "pattadar_form")
