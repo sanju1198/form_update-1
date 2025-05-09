@@ -25,13 +25,13 @@ public class FormEntity {
     private String landOwner;
 
     @Column(name = "new_pattadar_book", columnDefinition = "BIT(1)")
-    private boolean newPattadarBook;
+    private Boolean newPattadarBook;
 
     @Column(name = "new_pattadar_book_no", length = 50)  // or 100
     private String newPattadarBookNo;
 
     @Column(name = "old_pattadar_book", columnDefinition = "BIT(1)")
-    private boolean oldPattadarBook;
+    private Boolean oldPattadarBook;
     // Getters and Setters
     public String getLandOwner() {
         return landOwner;
